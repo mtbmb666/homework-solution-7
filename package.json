@@ -2,10 +2,10 @@
   "name": "solution-homework-7",
   "author": "XBDURRXUF I",
   "scripts": {
-    "compile:part1": "javac ./part1/Main.java -o ./dist/Main.class",
-    "compile:part2": "javac ./part2/Main.java -o ./dist2/Main.class",
-    "start:part1": "java ./dist/Main",
-    "start:part2": "java ./dist/Main"
+    "compile:part1": "javac -d ./dist ./part1/*.java",
+    "compile:part2": "javac -d ./dist2 ./part2/*.java",
+    "start:part1": "java -cp ./dist Main",
+    "start:part2": "java -cp ./dist2 Main"
   },
   "dependencies": {
     "javac": "23.4.1",
